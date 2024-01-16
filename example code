@@ -1,0 +1,20 @@
+let a = {name: 'Akshara'}
+let b= a
+
+console.log(a);
+console.log(b);
+
+a.name = 'avni'
+console.log (a);
+console.log(b);
+
+a= {name: 'anie'}
+// a now points to diff obj , while b still points to original obj
+console.log(a);  //o/p: anie
+console.log(b);  //o/p: avni
+
+//if u want b val to chng u need to reassign  b
+//because the reassignment a = {name: 'anie'} does not affect the reference held by b
+
+//obj - js creates it fro scratch
+//val- already exists in memory
